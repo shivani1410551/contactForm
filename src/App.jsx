@@ -7,7 +7,7 @@ function App() {
     setSuccess((prev) => !prev);
   }
   return (
-    <div className="bg-GreenLight h-screen  flex justify-center items-center">
+    <main className="bg-GreenLight h-screen  flex justify-center items-center">
       {!success && <ContactUs onSuccess={handleSuccess} />}
       {success && (
         <>
@@ -16,7 +16,7 @@ function App() {
           <ContactUs onSuccess={handleSuccess} />
         </>
       )}
-    </div>
+    </main>
   );
 }
 

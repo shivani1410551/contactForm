@@ -16,7 +16,11 @@ const onSubmit = (values, action) => {
 const ContactUs = ({ onSuccess }) => {
   return (
     <div className="bg-White rounded-md p-6 xs:m-8 sm:m-8  md:max-w-[500px] md:max-h-[90vh]">
-      <h1 className="text-GreyDarker font-bold text-lg pb-3 ">Contact Us</h1>
+      <header>
+        {" "}
+        <h1 className="text-GreyDarker font-bold text-lg pb-3 ">Contact Us</h1>
+      </header>
+
       <Formik
         initialValues={formInitialValues}
         validationSchema={FormSchema}
@@ -195,12 +199,15 @@ const ContactUs = ({ onSuccess }) => {
             className="text-Red xs:text-[8px] sm:text-[8px] md:text-[12px]"
           />
           {/* submit btn */}
-          <Field
-            type="submit"
-            value="Submit"
-            className="bg-GreenMedium text-White block w-full rounded py-[8px] text-[14px] mt-4 mb-2  hover:bg-GreyDarker outline-none cursor-pointer transition-colors"
-            onClick={onSuccess}
-          />
+          <footer>
+            {" "}
+            <Field
+              type="submit"
+              value="Submit"
+              className="bg-GreenMedium text-White block w-full rounded py-[8px] text-[14px] mt-4 mb-2  hover:bg-GreyDarker outline-none cursor-pointer transition-colors"
+              onClick={onSuccess}
+            />
+          </footer>
         </Form>
       </Formik>
     </div>

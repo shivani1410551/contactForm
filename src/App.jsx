@@ -8,8 +8,14 @@ function App() {
   }
   return (
     <div className="bg-GreenLight h-screen  flex justify-center items-center">
-      <ContactUs onSuccess={handleSuccess} />
-      {success && <SuccessState />}
+      {!success && <ContactUs onSuccess={handleSuccess} />}
+      {success && (
+        <>
+          {" "}
+          <SuccessState />
+          <ContactUs onSuccess={handleSuccess} />
+        </>
+      )}
     </div>
   );
 }

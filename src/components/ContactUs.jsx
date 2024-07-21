@@ -100,11 +100,7 @@ const ContactUs = ({ onSuccess }) => {
             </div>
             {/* radio */}
             <div className="formGroup">
-              <p
-                name="queryType"
-                id="queryType"
-                className=" text-[14px] py-1 text-gray-500"
-              >
+              <p id="queryType" className=" text-[14px] py-1 text-gray-500">
                 Query Type *
               </p>{" "}
               <div className="radio-wrapper flex md:gap-5 xs:flex-col sm:flex-col md:flex-row ">
